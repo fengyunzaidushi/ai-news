@@ -5,6 +5,7 @@ import unittest
 from scripts.update_news import (
     parse_jike_public_items,
     parse_telegram_public_items,
+    resolve_official_rss_url,
     resolve_opml_bridge_source,
 )
 
@@ -21,6 +22,11 @@ class PrivateBridgeSourceTests(unittest.TestCase):
         self.assertEqual(bridge["bridge_type"], "jike")
         self.assertEqual(bridge["bridge_kind"], "topic")
         self.assertEqual(bridge["url"], "https://m.okjike.com/topics/63579abb6724cc583b9bba9a")
+
+    def test_skips_rsshub_v2ex_public_instance_sources(self):
+        resolved, reason = resolve_official_rss_url("https://rsshub.app/v2ex/topics/hot")
+        self.assertIsNone(resolved)
+        self.assertEqual(reason, "no_official_rss_for_source_type")
 
     def test_parse_telegram_public_items(self):
         html = """

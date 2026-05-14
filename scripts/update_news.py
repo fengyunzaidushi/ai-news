@@ -61,6 +61,7 @@ RSS_FEED_REPLACEMENTS: dict[str, str] = {
 RSS_FEED_SKIP_PREFIXES: tuple[str, ...] = (
     "https://rsshub.app/telegram/channel/",
     "https://rsshub.app/jike/",
+    "https://rsshub.app/v2ex/",
     "https://rsshub.app/bilibili/",
     "https://rsshub.app/zhihu/",
     "https://rsshub.app/xiaoyuzhou/podcast/",
@@ -75,6 +76,10 @@ RSS_FEED_SKIP_EXACT: set[str] = {
     "https://rachelbythebay.com/w/atom.xml",
     "https://flak.tedunangst.com/rss",
 }
+
+
+def log_progress(message: str) -> None:
+    print(message, flush=True)
 
 OFFICIAL_AI_FEEDS: tuple[dict[str, str], ...] = (
     {
@@ -1872,6 +1877,7 @@ def collect_all(session: requests.Session, now: datetime) -> tuple[list[RawItem]
         start = time.perf_counter()
         error = None
         count = 0
+        log_progress(f"[source:start] {site_name} ({site_id})")
         try:
             items = fn(session, now)
             count = len(items)
@@ -1879,6 +1885,10 @@ def collect_all(session: requests.Session, now: datetime) -> tuple[list[RawItem]
         except Exception as exc:
             error = str(exc)
         elapsed_ms = int((time.perf_counter() - start) * 1000)
+        if error:
+            log_progress(f"[source:error] {site_name} ({site_id}) {elapsed_ms}ms: {error}")
+        else:
+            log_progress(f"[source:done] {site_name} ({site_id}) {elapsed_ms}ms, {count} items")
         statuses.append(
             {
                 "site_id": site_id,
@@ -2099,6 +2109,7 @@ def fetch_opml_rss(
         resolved_url, skip_reason = resolve_official_rss_url(original_url)
         if not resolved_url:
             feed_id = hashlib.sha1(original_url.encode("utf-8")).hexdigest()[:10]
+            log_progress(f"[opml:skip] {feed['title']} <{original_url}>: {skip_reason or 'skipped'}")
             feed_statuses.append(
                 {
                     "site_id": f"opmlrss:{feed_id}",
@@ -2130,6 +2141,7 @@ def fetch_opml_rss(
         start = time.perf_counter()
         error = None
         local_items: list[RawItem] = []
+        log_progress(f"[opml:start] {feed_title} <{feed_url}>")
 
         try:
             resp = requests.get(
@@ -2216,6 +2228,10 @@ def fetch_opml_rss(
             error = str(exc)
 
         duration_ms = int((time.perf_counter() - start) * 1000)
+        if error:
+            log_progress(f"[opml:error] {feed_title} {duration_ms}ms: {error}")
+        else:
+            log_progress(f"[opml:done] {feed_title} {duration_ms}ms, {len(local_items)} items")
         status = {
             "site_id": f"opmlrss:{feed_id}",
             "site_name": "OPML RSS",
