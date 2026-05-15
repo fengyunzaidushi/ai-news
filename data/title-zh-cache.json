@@ -14692,5 +14692,7 @@
   "Anthropic's System Reminders in Claude: User-Turn Injection Architecture (LCR Successor Documentation, Vol 2)": "Anthropic 在 Claude 中的系统提醒：用户轮流注入架构（LCR 后继文档，第 2 卷）",
   "LLM Policy for Rust Compiler": "Rust 编译器的 LLM 政策",
   "Sea's View on the Future of Agentic Software Development with Codex": "Sea 对 Codex 代理软件开发未来的看法",
-  "Best \"Brain\" for Agents Is Just Versioned Folders of Markdown Files": "代理的最佳“大脑”就是 Markdown 文件的版本文件夹"
+  "Best \"Brain\" for Agents Is Just Versioned Folders of Markdown Files": "代理的最佳“大脑”就是 Markdown 文件的版本文件夹",
+  "How Claude Code works in large codebases": "Claude Code 如何在大型代码库中工作",
+  "Access to frontier AI will soon be limited by economic and security constraints": "前沿人工智能的获取很快就会受到经济和安全限制"
 }
