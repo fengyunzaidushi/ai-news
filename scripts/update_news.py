@@ -1908,27 +1908,30 @@ def parse_opml_subscriptions(opml_path: Path) -> list[dict[str, str]]:
     out: list[dict[str, str]] = []
     seen: set[str] = set()
 
-    for outline in root.findall(".//outline"):
-        xml_url = str(outline.attrib.get("xmlUrl") or "").strip()
-        if not xml_url:
-            continue
-        if xml_url in seen:
-            continue
-        seen.add(xml_url)
-        title = first_non_empty(
-            outline.attrib.get("title"),
-            outline.attrib.get("text"),
-            host_of_url(xml_url),
-            xml_url,
-        )
-        html_url = str(outline.attrib.get("htmlUrl") or "").strip()
-        out.append(
-            {
-                "title": title,
-                "xml_url": xml_url,
-                "html_url": html_url,
-            }
-        )
+    def walk(node: ET.Element, ancestors: list[str]) -> None:
+        label = first_non_empty(node.attrib.get("title"), node.attrib.get("text"))
+        xml_url = str(node.attrib.get("xmlUrl") or "").strip()
+        next_ancestors = ancestors + ([label] if label else [])
+        if xml_url and xml_url not in seen:
+            seen.add(xml_url)
+            title = first_non_empty(label, host_of_url(xml_url), xml_url)
+            html_url = str(node.attrib.get("htmlUrl") or "").strip()
+            out.append(
+                {
+                    "title": title,
+                    "xml_url": xml_url,
+                    "html_url": html_url,
+                    "source_group": " / ".join(ancestors).strip(),
+                }
+            )
+        for child in node.findall("outline"):
+            walk(child, next_ancestors)
+
+    body = root.find(".//body")
+    if body is None:
+        return out
+    for outline in body.findall("outline"):
+        walk(outline, [])
     return out
 
 
@@ -2102,6 +2105,7 @@ def fetch_opml_rss(
             record["xml_url_original"] = original_url
             record["xml_url"] = bridge["url"]
             record["replaced"] = True
+            record["source_group"] = str(feed.get("source_group") or "")
             record.update(bridge)
             resolved_feeds.append(record)
             continue
@@ -2131,6 +2135,7 @@ def fetch_opml_rss(
         record["xml_url_original"] = original_url
         record["xml_url"] = resolved_url
         record["replaced"] = bool(resolved_url != original_url)
+        record["source_group"] = str(feed.get("source_group") or "")
         resolved_feeds.append(record)
 
     def fetch_single_feed(feed: dict[str, str]) -> tuple[list[RawItem], dict[str, Any]]:
@@ -2142,6 +2147,7 @@ def fetch_opml_rss(
         error = None
         local_items: list[RawItem] = []
         log_progress(f"[opml:start] {feed_title} <{feed_url}>")
+        source_group = str(feed.get("source_group") or "").strip()
 
         try:
             resp = requests.get(
@@ -2200,6 +2206,7 @@ def fetch_opml_rss(
                             meta={
                                 "feed_url": feed_url,
                                 "feed_home": feed.get("html_url") or "",
+                                "source_group": source_group,
                             },
                         )
                     )
@@ -2221,6 +2228,7 @@ def fetch_opml_rss(
                             meta={
                                 "feed_url": feed_url,
                                 "feed_home": feed.get("html_url") or "",
+                                "source_group": source_group,
                             },
                         )
                     )
@@ -2246,6 +2254,7 @@ def fetch_opml_rss(
             "skip_reason": None,
             "replaced": bool(original_feed_url != feed_url),
             "bridge_type": feed.get("bridge_type"),
+            "source_group": source_group or None,
         }
         return local_items, status
 
@@ -3068,7 +3077,7 @@ def main() -> int:
 
         existing = archive.get(item_id)
         if existing is None:
-            archive[item_id] = {
+            archive_record = {
                 "id": item_id,
                 "site_id": raw.site_id,
                 "site_name": raw.site_name,
@@ -3079,10 +3088,18 @@ def main() -> int:
                 "first_seen_at": iso(now),
                 "last_seen_at": iso(now),
             }
+            source_group = raw.meta.get("source_group") if isinstance(raw.meta, dict) else None
+            if source_group:
+                archive_record["source_group"] = source_group
+            archive[item_id] = archive_record
         else:
             existing["site_id"] = raw.site_id
             existing["site_name"] = raw.site_name
             existing["source"] = raw.source
+            if isinstance(raw.meta, dict):
+                source_group = raw.meta.get("source_group") or existing.get("source_group")
+                if source_group:
+                    existing["source_group"] = source_group
             existing["title"] = title
             existing["url"] = url
             if raw.published_at:
@@ -3120,6 +3137,11 @@ def main() -> int:
                 str(normalized.get("source") or ""),
                 str(normalized.get("url") or ""),
             ))
+            source_group = str(normalized.get("source_group") or "").strip()
+            if source_group:
+                normalized["source_group"] = maybe_fix_mojibake(source_group)
+            else:
+                normalized.pop("source_group", None)
             if str(normalized.get("site_id") or "") == "aihubtoday" and is_hubtoday_placeholder_title(
                 str(normalized.get("title") or "")
             ):

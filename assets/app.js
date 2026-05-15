@@ -285,7 +285,8 @@ function renderItemNode(item) {
   const categoryEl = node.querySelector(".category");
   categoryEl.textContent = kind.label;
   categoryEl.classList.add(`kind-${kind.tone}`);
-  node.querySelector(".source").textContent = `分区: ${item.source}`;
+  const sourceGroup = (item.source_group || "").trim();
+  node.querySelector(".source").textContent = sourceGroup ? `分区: ${sourceGroup} / ${item.source}` : `分区: ${item.source}`;
   node.querySelector(".time").textContent = fmtTime(item.published_at || item.first_seen_at);
 
   const titleEl = node.querySelector(".title");
@@ -324,25 +325,54 @@ function buildSourceGroupNode(source, items) {
   return section;
 }
 
-function groupBySource(items) {
+function groupBySourceGroup(items) {
   const groupMap = new Map();
   items.forEach((item) => {
-    const key = item.source || "未分区";
-    if (!groupMap.has(key)) {
-      groupMap.set(key, []);
+    const group = (item.source_group || "").trim() || "未分组";
+    if (!groupMap.has(group)) {
+      groupMap.set(group, new Map());
     }
-    groupMap.get(key).push(item);
+    const sourceMap = groupMap.get(group);
+    const source = item.source || "未分区";
+    if (!sourceMap.has(source)) {
+      sourceMap.set(source, []);
+    }
+    sourceMap.get(source).push(item);
   });
 
-  return Array.from(groupMap.entries()).sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0], "zh-CN"));
+  return Array.from(groupMap.entries()).sort((a, b) => {
+    const aCount = Array.from(a[1].values()).reduce((sum, groupItems) => sum + groupItems.length, 0);
+    const bCount = Array.from(b[1].values()).reduce((sum, groupItems) => sum + groupItems.length, 0);
+    return bCount - aCount || a[0].localeCompare(b[0], "zh-CN");
+  });
 }
 
 function renderGroupedBySource(items) {
-  const groups = groupBySource(items);
+  const grouped = groupBySourceGroup(items);
   const frag = document.createDocumentFragment();
 
-  groups.forEach(([source, groupItems]) => {
-    frag.appendChild(buildSourceGroupNode(source, groupItems));
+  grouped.forEach(([groupName, sourceMap]) => {
+    const groupSection = document.createElement("section");
+    groupSection.className = "site-group";
+    const header = document.createElement("header");
+    header.className = "site-group-head";
+    const title = document.createElement("h3");
+    title.textContent = groupName;
+    const total = Array.from(sourceMap.values()).reduce((sum, groupItems) => sum + groupItems.length, 0);
+    const count = document.createElement("span");
+    count.textContent = `${fmtNumber(total)} 条`;
+    const groupList = document.createElement("div");
+    groupList.className = "site-group-list";
+    header.append(title, count);
+    groupSection.append(header, groupList);
+
+    Array.from(sourceMap.entries())
+      .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0], "zh-CN"))
+      .forEach(([source, groupItems]) => {
+        groupList.appendChild(buildSourceGroupNode(source, groupItems));
+      });
+
+    frag.appendChild(groupSection);
   });
 
   newsListEl.appendChild(frag);
@@ -381,9 +411,28 @@ function renderGroupedBySiteAndSource(items) {
     header.append(title, count);
     siteSection.append(header, siteListEl);
 
-    const sourceGroups = groupBySource(site.items);
-    sourceGroups.forEach(([source, groupItems]) => {
-      siteListEl.appendChild(buildSourceGroupNode(source, groupItems));
+    const sourceGroups = groupBySourceGroup(site.items);
+    sourceGroups.forEach(([groupName, sourceMap]) => {
+      const groupSection = document.createElement("section");
+      groupSection.className = "source-group";
+      const header = document.createElement("header");
+      header.className = "source-group-head";
+      const title = document.createElement("h3");
+      title.textContent = groupName;
+      const total = Array.from(sourceMap.values()).reduce((sum, groupItems) => sum + groupItems.length, 0);
+      const count = document.createElement("span");
+      count.textContent = `${fmtNumber(total)} 条`;
+      const list = document.createElement("div");
+      list.className = "source-group-list";
+      header.append(title, count);
+      groupSection.append(header, list);
+
+      Array.from(sourceMap.entries())
+        .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0], "zh-CN"))
+        .forEach(([source, groupItems]) => {
+          list.appendChild(buildSourceGroupNode(source, groupItems));
+        });
+      siteListEl.appendChild(groupSection);
     });
     frag.appendChild(siteSection);
   });

@@ -41,6 +41,23 @@ class UtilsTests(unittest.TestCase):
         self.assertEqual(feeds[0]["title"], "A")
         self.assertEqual(feeds[1]["title"], "B")
 
+    def test_parse_opml_subscriptions_tracks_nested_groups(self):
+        opml = """<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0"><body>
+<outline text="v2ex">
+  <outline text="V2EX-技术" xmlUrl="https://www.v2ex.com/feed/tab/tech.xml" />
+</outline>
+<outline text="github">
+  <outline text="weekly-any" xmlUrl="https://rsshub.app/github/trending/weekly/any" />
+</outline>
+</body></opml>"""
+        with TemporaryDirectory() as td:
+            p = Path(td) / "x.opml"
+            p.write_text(opml, encoding="utf-8")
+            feeds = parse_opml_subscriptions(p)
+        self.assertEqual(feeds[0]["source_group"], "v2ex")
+        self.assertEqual(feeds[1]["source_group"], "github")
+
 
 if __name__ == "__main__":
     unittest.main()

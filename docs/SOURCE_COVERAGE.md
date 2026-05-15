@@ -146,6 +146,10 @@ For a private custom setup:
 5. Keep `feeds/follow.opml` private. For GitHub Actions, store its base64
    content in the `FOLLOW_OPML_B64` secret.
 
+Nested OPML folders are preserved as `source_group` metadata. The public UI can
+render them as a second-level grouping under each site so personal sources stay
+organized without changing the default feed list.
+
 ## Adding A Built-In Source
 
 Use this only for sources that should benefit every public visitor:
