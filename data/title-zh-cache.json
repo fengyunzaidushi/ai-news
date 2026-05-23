@@ -16819,5 +16819,8 @@
   "I’ve tested both of Anker's new feature-packed Soundcore earbuds, which offer everything from personalized sound to Dolby Atmos to AI translation — one is clearly better, but I’d actually recommend buying the other one": "我测试了 Anker 的两款功能齐全的新 Soundcore 耳塞，它们提供从个性化声音到杜比全景声再到人工智能翻译的一切 - 一款显然更好，但我实际上建议购买另一款",
   "Apple Preparing New 'Gen AI' Website Ahead of WWDC": "苹果在 WWDC 之前准备新的“Gen AI”网站",
   "A self-powered computer in actual credit-card size (~1mm thick)": "实际信用卡大小（约 1 毫米厚）的自供电计算机",
-  "Data Centers Now Consume 6% of US Electricity–and the Backlash Has Begun": "数据中心现在消耗美国 6% 的电力——强烈反对已经开始"
+  "Data Centers Now Consume 6% of US Electricity–and the Backlash Has Begun": "数据中心现在消耗美国 6% 的电力——强烈反对已经开始",
+  "Polsia raised $30M; source map: fake ARR, dead users, god-mode over your company": "Polsia 筹集了 3000 万美元；源图：假 ARR、死用户、上帝模式控制你的公司",
+  "We reduced a real Node.js production Docker image from 1.2GB to 78MB": "我们将真实的 Node.js 生产 Docker 镜像从 1.2GB 减少到 78MB",
+  "Malicious Postinstall Hook Found in 700 GitHub Repos, Including Node Projects": "在 700 个 GitHub 存储库（包括 Node 项目）中发现恶意 Postinstall Hook"
 }
