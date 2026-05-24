@@ -16909,5 +16909,9 @@
   "I copy-pasted a problem asking to \"sketch\" a function. Opus 4.7 took \"sketch\" way too literally, and instead of mathematically plotting, it tried doing something by \"connecting various points\".": "我复制粘贴了一个问题，要求“绘制”一个函数。 Opus 4.7 过于字面地理解“草图”，它没有进行数学绘图，而是尝试通过“连接各个点”来做一些事情。",
   "Hackers are learning to exploit chatbot ‘personalities’": "黑客正在学习利用聊天机器人的“个性”",
   "Mastering Dyalog APL": "掌握 Dynalog APL",
-  "All Lean Books and Where to Find Them": "所有精益书籍以及在哪里可以找到它们"
+  "All Lean Books and Where to Find Them": "所有精益书籍以及在哪里可以找到它们",
+  "No doubt it isn't for minors": "毫无疑问不适合未成年人",
+  "Claude Code API Error: 400 \"context_management: Extra inputs are not permitted\"": "克劳德代码 API 错误：400“context_management：不允许额外输入”",
+  "Childhood Computing": "童年计算",
+  "A hybrid program I started working on 48 hours ago, and I am loving it. Love love love.": "我 48 小时前开始开发一个混合程序，我很喜欢它。爱爱爱。"
 }
