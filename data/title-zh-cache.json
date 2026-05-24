@@ -16913,5 +16913,11 @@
   "No doubt it isn't for minors": "毫无疑问不适合未成年人",
   "Claude Code API Error: 400 \"context_management: Extra inputs are not permitted\"": "克劳德代码 API 错误：400“context_management：不允许额外输入”",
   "Childhood Computing": "童年计算",
-  "A hybrid program I started working on 48 hours ago, and I am loving it. Love love love.": "我 48 小时前开始开发一个混合程序，我很喜欢它。爱爱爱。"
+  "A hybrid program I started working on 48 hours ago, and I am loving it. Love love love.": "我 48 小时前开始开发一个混合程序，我很喜欢它。爱爱爱。",
+  "DeepSeek reasonix, DeepSeek native coding agent with high caching and low cost": "DeepSeek Reasonix，高缓存、低成本的 DeepSeek 原生编码代理",
+  "Constraint Decay: The Fragility of LLM Agents in Back End Code Generation": "约束衰减：LLM 代理在后端代码生成中的脆弱性",
+  "A complete Substrate that makes Claude Code not stateless": "一个完整的 Substrate，使 Claude Code 不是无状态的",
+  "Created a desktop dev tools app entirely using Claude design and Claude sonnet": "完全使用克劳德设计和克劳德十四行诗创建了一个桌面开发工具应用程序",
+  "Sonnet vs opus": "十四行诗与作品",
+  "The Worlds Left to Conquer": "尚待征服的世界"
 }
