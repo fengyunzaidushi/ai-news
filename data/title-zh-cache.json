@@ -18456,5 +18456,9 @@
   "Long Claude chats slowly get worse - slower, repetitive, forgetful. Here's the \"context handoff\" trick that resets it without losing anything (prompt inside)": "克劳德的长聊慢慢地变得更糟——缓慢、重复、健忘。这是“上下文切换”技巧，可以在不丢失任何内容的情况下重置它（内部提示）",
   "What’s the most useful thing you’ve connected Claude to?": "你与克劳德联系过的最有用的东西是什么？",
   "ChatGPT for Google Sheets Exfiltrates Workbooks": "ChatGPT for Google Sheets 窃取工作簿",
-  "AISlop - I built a CLI for cleaning up AI generated code smells/slop, and it jumped from 19 to 250+ GitHub stars": "AISlop - 我构建了一个 CLI 来清理 AI 生成的代码气味/溢出，它的 GitHub 星数从 19 颗跃升至 250 颗以上"
+  "AISlop - I built a CLI for cleaning up AI generated code smells/slop, and it jumped from 19 to 250+ GitHub stars": "AISlop - 我构建了一个 CLI 来清理 AI 生成的代码气味/溢出，它的 GitHub 星数从 19 颗跃升至 250 颗以上",
+  "'The Oral Tradition That Built Software May Not Survive AI'": "“构建软件的口头传统可能无法在人工智能中生存”",
+  "US healthcare still stupidly expensive, with pathetic outcomes, study finds": "研究发现，美国医疗保健仍然极其昂贵，结果悲惨",
+  "New solar desalination breakthrough makes fresh water without toxic brine": "太阳能海水淡化新突破使淡水不含有毒盐水",
+  "Claude Code changed how I think about dev workspaces": "Claude Code 改变了我对开发工作空间的看法"
 }
