@@ -18454,5 +18454,7 @@
   "Claudificus Maximus IV:VI — Caesar Refectorum, Dominus Contextus, Pater of all your lost tokens": "Claudius Maximus 4:6 - 恢复者的凯撒，上下文之主，所有丢失标记之父",
   "how do i know if bro 4.8 is stuck or not?": "我怎么知道 bro 4.8 是否卡住了？",
   "Long Claude chats slowly get worse - slower, repetitive, forgetful. Here's the \"context handoff\" trick that resets it without losing anything (prompt inside)": "克劳德的长聊慢慢地变得更糟——缓慢、重复、健忘。这是“上下文切换”技巧，可以在不丢失任何内容的情况下重置它（内部提示）",
-  "What’s the most useful thing you’ve connected Claude to?": "你与克劳德联系过的最有用的东西是什么？"
+  "What’s the most useful thing you’ve connected Claude to?": "你与克劳德联系过的最有用的东西是什么？",
+  "ChatGPT for Google Sheets Exfiltrates Workbooks": "ChatGPT for Google Sheets 窃取工作簿",
+  "AISlop - I built a CLI for cleaning up AI generated code smells/slop, and it jumped from 19 to 250+ GitHub stars": "AISlop - 我构建了一个 CLI 来清理 AI 生成的代码气味/溢出，它的 GitHub 星数从 19 颗跃升至 250 颗以上"
 }
