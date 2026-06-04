@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-04T01:36:53.644845Z",
+  "generated_at": "2026-06-04T03:06:35.838777Z",
   "sites": [
     {
       "site_id": "official_ai",
       "site_name": "Official AI Updates",
       "ok": true,
-      "item_count": 208,
-      "duration_ms": 4490,
+      "item_count": 221,
+      "duration_ms": 3348,
       "error": null
     },
     {
@@ -14,7 +14,7 @@
       "site_name": "AI Breakfast",
       "ok": true,
       "item_count": 9,
-      "duration_ms": 250,
+      "duration_ms": 769,
       "error": null
     },
     {
@@ -22,7 +22,7 @@
       "site_name": "Follow Builders",
       "ok": true,
       "item_count": 39,
-      "duration_ms": 314,
+      "duration_ms": 143,
       "error": null
     },
     {
@@ -30,7 +30,7 @@
       "site_name": "TechURLs",
       "ok": true,
       "item_count": 405,
-      "duration_ms": 491,
+      "duration_ms": 563,
       "error": null
     },
     {
@@ -38,15 +38,15 @@
       "site_name": "Buzzing",
       "ok": true,
       "item_count": 744,
-      "duration_ms": 317,
+      "duration_ms": 318,
       "error": null
     },
     {
       "site_id": "iris",
       "site_name": "Info Flow",
       "ok": true,
-      "item_count": 370,
-      "duration_ms": 11644,
+      "item_count": 379,
+      "duration_ms": 12436,
       "error": null
     },
     {
@@ -54,15 +54,15 @@
       "site_name": "BestBlogs",
       "ok": true,
       "item_count": 1,
-      "duration_ms": 985,
+      "duration_ms": 538,
       "error": null
     },
     {
       "site_id": "tophub",
       "site_name": "TopHub",
       "ok": true,
-      "item_count": 2986,
-      "duration_ms": 1282,
+      "item_count": 2991,
+      "duration_ms": 1678,
       "error": null
     },
     {
@@ -70,7 +70,7 @@
       "site_name": "Zeli",
       "ok": true,
       "item_count": 79,
-      "duration_ms": 585,
+      "duration_ms": 515,
       "error": null
     },
     {
@@ -78,7 +78,7 @@
       "site_name": "AI HubToday",
       "ok": true,
       "item_count": 10,
-      "duration_ms": 355,
+      "duration_ms": 326,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "site_name": "AIbase",
       "ok": true,
       "item_count": 20,
-      "duration_ms": 14121,
+      "duration_ms": 1112,
       "error": null
     },
     {
@@ -94,7 +94,7 @@
       "site_name": "AI HOT",
       "ok": true,
       "item_count": 50,
-      "duration_ms": 1130,
+      "duration_ms": 1527,
       "error": null
     },
     {
@@ -102,21 +102,21 @@
       "site_name": "NewsNow",
       "ok": true,
       "item_count": 144,
-      "duration_ms": 400,
+      "duration_ms": 480,
       "error": null
     },
     {
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
       "ok": true,
-      "partial_failures": 1,
-      "item_count": 874,
-      "duration_ms": 10481,
-      "error": "1 feeds failed",
+      "partial_failures": 0,
+      "item_count": 889,
+      "duration_ms": 5261,
+      "error": null,
       "feed_count": 10,
       "effective_feed_count": 7,
-      "ok_feed_count": 9,
-      "failed_feed_count": 1,
+      "ok_feed_count": 10,
+      "failed_feed_count": 0,
       "skipped_feed_count": 3,
       "replaced_feed_count": 1
     }
@@ -124,18 +124,16 @@
   "successful_sites": 14,
   "failed_sites": [],
   "zero_item_sites": [],
-  "fetched_raw_items": 5939,
-  "items_before_topic_filter": 7974,
-  "items_in_24h": 1026,
+  "fetched_raw_items": 5981,
+  "items_before_topic_filter": 7994,
+  "items_in_24h": 1011,
   "rss_opml": {
     "enabled": true,
     "path": "configured",
     "feed_total": 10,
     "effective_feed_total": 7,
-    "ok_feeds": 6,
-    "failed_feeds": [
-      "https://www.reddit.com/r/ClaudeAI/.rss"
-    ],
+    "ok_feeds": 7,
+    "failed_feeds": [],
     "zero_item_feeds": [
       "https://blog.langchain.com/rss/"
     ],
@@ -166,10 +164,10 @@
         "feed_title": "ClaudeAI",
         "feed_url": "https://www.reddit.com/r/ClaudeAI/.rss",
         "effective_feed_url": "https://www.reddit.com/r/ClaudeAI/.rss",
-        "ok": false,
-        "item_count": 0,
-        "duration_ms": 94,
-        "error": "403 Client Error: Blocked for url: https://www.reddit.com/r/ClaudeAI/.rss",
+        "ok": true,
+        "item_count": 25,
+        "duration_ms": 939,
+        "error": null,
         "skipped": false,
         "skip_reason": null,
         "replaced": false,
@@ -184,7 +182,7 @@
         "effective_feed_url": "https://huggingface.co/blog/feed.xml",
         "ok": true,
         "item_count": 791,
-        "duration_ms": 388,
+        "duration_ms": 421,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -200,7 +198,7 @@
         "effective_feed_url": "https://blog.langchain.com/rss/",
         "ok": true,
         "item_count": 0,
-        "duration_ms": 851,
+        "duration_ms": 562,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -215,8 +213,8 @@
         "feed_url": "https://www.v2ex.com/feed/tab/tech.xml",
         "effective_feed_url": "https://www.v2ex.com/feed/tab/tech.xml",
         "ok": true,
-        "item_count": 50,
-        "duration_ms": 334,
+        "item_count": 40,
+        "duration_ms": 458,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -274,7 +272,7 @@
         "effective_feed_url": "https://www.zengzhang.ai/feed",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 735,
+        "duration_ms": 912,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -290,7 +288,7 @@
         "effective_feed_url": "https://sspai.com/feed",
         "ok": true,
         "item_count": 10,
-        "duration_ms": 7996,
+        "duration_ms": 1611,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -306,7 +304,7 @@
         "effective_feed_url": "http://www.ruanyifeng.com/blog/atom.xml",
         "ok": true,
         "item_count": 3,
-        "duration_ms": 83,
+        "duration_ms": 358,
         "error": null,
         "skipped": false,
         "skip_reason": null,
