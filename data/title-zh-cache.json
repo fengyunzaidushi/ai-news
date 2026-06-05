@@ -19546,5 +19546,11 @@
   "Common Lisp bindings for brotli compression": "用于 brotli 压缩的 Common Lisp 绑定",
   "Blk – text navigation on your terms (Emacs)": "Blk – 根据您的条件进行文本导航 (Emacs)",
   "GitHub just switched Copilot to metered billing, and developers are watching months of credits vanish in a single day": "GitHub 刚刚将 Copilot 切换为计量计费，开发人员眼睁睁地看着几个月的信用在一天内消失",
-  "Emacs with a native Metal rendering back end (macOS)": "具有原生 Metal 渲染后端的 Emacs (macOS)"
+  "Emacs with a native Metal rendering back end (macOS)": "具有原生 Metal 渲染后端的 Emacs (macOS)",
+  "I like analyzing \"Claude did this\" tweets... With Claude": "我喜欢分析“克劳德做了这件事”的推文……和克劳德一起",
+  "Anthropic calls for top AI labs to weigh slowing or temporarily pausing development, suggesting that self-improving AI systems may soon pose societal risks (Wall Street Journal)": "Anthropic 呼吁顶级人工智能实验室权衡放慢或暂时暂停发展，这表明自我改进的人工智能系统可能很快就会带来社会风险（华尔街日报）",
+  "Just 5 prompts for Opus 4.8 to add an entirely new map/mode (ARAM) to LMAO": "Opus 4.8 只需 5 条提示即可向 LMAO 添加全新地图/模式 (ARAM)",
+  "White House will dump $700M of public funds into costly, unreliable coal again": "白宫将再次将 7 亿美元公共资金投入昂贵且不可靠的煤炭",
+  "WSL 2 is getting faster Windows file system access": "WSL 2 的 Windows 文件系统访问速度更快",
+  "Machine learning using Clojure, libpython-clj2, and PyTorch": "使用 Clojure、libpython-clj2 和 PyTorch 进行机器学习"
 }
