@@ -20601,5 +20601,14 @@
   "Its official: OpenAI files IPO": "官方消息：OpenAI 提交 IPO",
   "The EU just ordered Meta to let rival AI assistants back onto WhatsApp within five days": "欧盟刚刚命令 Meta 在五天内让竞争对手的人工智能助手重返 WhatsApp",
   "Using Optical Aberrations to Distinguish Real Astronomical Transients": "利用光学像差来区分真实的天文瞬变",
-  "Ask HN: What are tools you have made for yourself since the advent of AI?": "问 HN：自从人工智能出现以来，您为自己制作了哪些工具？"
+  "Ask HN: What are tools you have made for yourself since the advent of AI?": "问 HN：自从人工智能出现以来，您为自己制作了哪些工具？",
+  "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech": "语音代理可以处理双语客户吗？语码转换语音的前沿 ASR 基准测试",
+  "Brexit Ten Years On: The Economy": "英国脱欧十年后：经济",
+  "Fable 5 is actually insane": "《神鬼寓言5》确实很疯狂",
+  "When Fable 5 is used for frontier LLM development, it does not notify the user and instead limits the capabilities through methods such as prompt alteration, steering vectors, and PEFT": "《神鬼寓言5》用于前沿LLM开发时，不会通知用户，而是通过提示修改、转向向量、PEFT等方法限制能力",
+  "Fable 5 is insanely good but watch your usage, I was burning 2% a minute on 20x": "《神鬼寓言 5》非常好，但要注意你的使用情况，我在 20x 上每分钟燃烧 2%",
+  "Anthropic created a metric called 'Wet Blanket' to track how much Claude lectures you": "Anthropic 创建了一个名为“湿毯子”的指标来跟踪克劳德给你讲课的次数",
+  "The LD_DEBUG environment variable (2012)": "LD_DEBUG 环境变量 (2012)",
+  "Even light drinking raises risk of cancer, heart disease, and early death": "即使少量饮酒也会增加患癌症、心脏病和早逝的风险",
+  "macOS 27 Beta Breaks the Ability to Boot Asahi Linux": "macOS 27 Beta 破坏了启动 Asahi Linux 的能力"
 }
