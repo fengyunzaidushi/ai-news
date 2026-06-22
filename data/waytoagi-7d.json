@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-22T16:33:37.271659Z",
+  "generated_at": "2026-06-22T18:22:12.157148Z",
   "timezone": "Asia/Shanghai",
   "root_url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview",
   "history_url": "https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc",
   "window_days": 7,
   "latest_date": "2026-06-22",
-  "count_today": 6,
+  "count_today": 7,
   "updates_today": [
     {
       "date": "2026-06-22",
@@ -15,6 +15,11 @@
     {
       "date": "2026-06-22",
       "title": "成峰这款剪辑 Skill又升级啦！只需上传素材与文稿，AI就可以自动精剪口播、清理瑕疵、生成对齐字幕，还能智能匹配镜头、生成手绘风动态动画。全程支持可视化校对、片段精细化修改，最后一键合成高清成片。",
+      "url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview"
+    },
+    {
+      "date": "2026-06-22",
+      "title": "在深耕一年Agent基础设施、服务五百余名用户后，作者发现分层可独立的迭代才是优质智能体架构的核心。于是做了一个更好的 Agent 框架：FastClaw，面向云原生多租户场景设计，更快、更轻量、更好用。这篇文章记录了他对 OpenClaw 架构的理解，以及对 FastClaw 架构设计的经验总结。",
       "url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview"
     },
     {
@@ -38,7 +43,7 @@
       "url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview"
     }
   ],
-  "count_7d": 32,
+  "count_7d": 33,
   "updates_7d": [
     {
       "date": "2026-06-22",
@@ -48,6 +53,11 @@
     {
       "date": "2026-06-22",
       "title": "成峰这款剪辑 Skill又升级啦！只需上传素材与文稿，AI就可以自动精剪口播、清理瑕疵、生成对齐字幕，还能智能匹配镜头、生成手绘风动态动画。全程支持可视化校对、片段精细化修改，最后一键合成高清成片。",
+      "url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview"
+    },
+    {
+      "date": "2026-06-22",
+      "title": "在深耕一年Agent基础设施、服务五百余名用户后，作者发现分层可独立的迭代才是优质智能体架构的核心。于是做了一个更好的 Agent 框架：FastClaw，面向云原生多租户场景设计，更快、更轻量、更好用。这篇文章记录了他对 OpenClaw 架构的理解，以及对 FastClaw 架构设计的经验总结。",
       "url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview"
     },
     {
