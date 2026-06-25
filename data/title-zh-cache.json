@@ -24170,5 +24170,18 @@
   "claude tag in slack gone wrong": "Slack 中的克劳德标签出了问题",
   "After using my own Pro subscription for 18 months, my job finally got an enterprise license. I just had Opus spawn 451 Sonnet subagents which used 14M worth of tokens in a single 5 hour session -- and it didn't even hit the limit. This is amazing.": "在使用我自己的 Pro 订阅 18 个月后，我的工作终于获得了企业许可证。我刚刚让 Opus 生成了 451 个 Sonnet 子代理，它们在 5 小时的会话中使用了价值 1400 万的代币——而且它甚至没有达到限制。这太棒了。",
   "Codex CLI 0.142.2": "法典 CLI 0.142.2",
-  "Codex CLI 0.142.1": "法典 CLI 0.142.1"
+  "Codex CLI 0.142.1": "法典 CLI 0.142.1",
+  "Ford rehires 350 engineers after AI fails to preserve expertise or train juniors": "人工智能未能保留专业知识或培训初级员工后，福特重新雇用了 350 名工程师",
+  "A free form builder for agents because I hate building forms by hand": "为代理提供的免费表单构建器，因为我讨厌手动构建表单",
+  "Stop asking Claude for \"something creative.\" Ask it to find the lacuna.": "别再向克劳德索要“有创意的东西”了。要求它找到漏洞。",
+  "How autonomous systems are reshaping warehouse operations": "自动化系统如何重塑仓库运营",
+  "Zig's New BitCast Semantics and LLVM Back End Improvements": "Zig 的新 BitCast 语义和 LLVM 后端改进",
+  "Federal agents track down woman, demand she remove Instagram post about ICE": "联邦特工追踪一名女子，要求她删除 Instagram 上有关 ICE 的帖子",
+  "Apple raises Mac and iPad prices as the AI memory crunch reaches the shelf": "由于人工智能内存短缺，苹果提高了 Mac 和 iPad 的价格",
+  "Where every major LLM stands politically": "每个主要法学硕士的政治立场",
+  "Upwind launches AI Sensor for Endpoints as security teams grapple with AI’s expanding reach": "随着安全团队努力应对人工智能不断扩大的影响范围，Upwind 推出了面向终端的人工智能传感器",
+  "Apple just Increased Prices: here’s what’s changed": "苹果刚刚提高了价格：以下是变化内容",
+  "LLM APIs with built-in chatbot in 1 line of code": "只需 1 行代码即可实现带有内置聊天机器人的 LLM API",
+  "Cost centers now support enterprise teams": "成本中心现在支持企业团队",
+  "Spatially distributed complex organic matter detected in Mars crater": "在火星陨石坑中检测到空间分布的复杂有机物"
 }
