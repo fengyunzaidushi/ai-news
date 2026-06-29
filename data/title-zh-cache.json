@@ -24998,5 +24998,22 @@
   "Claude Opus 4.8 (fast mode) is now in preview for GitHub Copilot": "Claude Opus 4.8（快速模式）现已推出 GitHub Copilot 预览版",
   "In San Francisco, Even $180k Tech Salaries Are No Longer Enough": "在旧金山，即使 18 万美元的技术薪资也不够",
   "Restrict issue creation to collaborators only": "仅限协作者创建问题",
-  "We took away psychological safety and then told everyone to be more productive": "我们取消了心理安全感，然后告诉每个人要提高工作效率"
+  "We took away psychological safety and then told everyone to be more productive": "我们取消了心理安全感，然后告诉每个人要提高工作效率",
+  "Should I return to minimal CLAUDE.MDs and more detailed instructions?": "我应该返回最小的 CLAUDE.MD 和更详细的说明吗？",
+  "DiScoFormer: One transformer for density and score, across distributions": "DiScoFormer：一种跨分布的密度和分数转换器",
+  "Claude in Microsoft Foundry is now generally available.": "Microsoft Foundry 中的 Claude 现已全面上市。",
+  "Deterministic folding for LLM agents: continuity without LLM compaction": "LLM 代理的确定性折叠：无需 LLM 压缩的连续性",
+  "Ornith-1.0: self-improving open-source models for agentic coding": "Ornith-1.0：用于代理编码的自我改进开源模型",
+  "Eating disorder??": "饮食失调？？",
+  "Amazon Is Awash with AI-Written Guideslop for Games That Aren't Even Out": "亚马逊充斥着人工智能编写的尚未发布的游戏指南",
+  "The Radiation Exposure Lie": "辐射暴露的谎言",
+  "In San Francisco, even $180k tech salaries are no longer enough": "在旧金山，即使 18 万美元的技术薪资也不够了",
+  "How do you guys handle workspace recovery with Claude Code?": "你们如何使用 Claude Code 处理工作区恢复？",
+  "Putin is forced to admit the country faces shortages in wake Ukrainian attacks": "乌克兰袭击事件后，普京被迫承认该国面临物资短缺",
+  "Anesthesia / Emergency simulator built with Claude Code": "使用 Claude Code 构建的麻醉/紧急模拟器",
+  "WSL container is now available for public preview": "WSL 容器现已可供公共预览",
+  "How come big corp can't manage costs?": "为什么大公司无法控制成本？",
+  "System prompt changes in CC 2.1.179 (+5,328 tokens), CC 2.1.181 (-3,839 tokens), and CC 2.1.185 (-660 tokens)": "CC 2.1.179（+5,328 个令牌）、CC 2.1.181（-3,839 个令牌）和 CC 2.1.185（-660 个令牌）中的系统提示更改",
+  "You Don't Know Jack About Formal Verification": "你对形式验证一无所知",
+  "What’s the most useful thing Claude helped you build that nobody else would ever use?": "克劳德帮助你构建的最有用但其他人永远不会使用的东西是什么？"
 }
