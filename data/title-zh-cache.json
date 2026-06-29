@@ -24855,5 +24855,16 @@
   "British Origami: the 1955 exhibition by Akira Yoshizawa (2005)": "英国折纸：吉泽晃 1955 年展览 (2005)",
   "AI boom risks global financial crash, warn central bankers": "央行官员警告人工智能繁荣可能导致全球金融崩溃",
   "Tell Congress: Don't Force Age Checks Online": "告诉国会：不要强制在网上进行年龄检查",
-  "Wall Street regulator investigating prediction market giant Polymarket": "华尔街监管机构调查预测市场巨头Polymarket"
+  "Wall Street regulator investigating prediction market giant Polymarket": "华尔街监管机构调查预测市场巨头Polymarket",
+  "Age verification is just a precursor to automated attribution of speech": "年龄验证只是语音自动归因的前奏",
+  "I built a Claude Code plugin that makes the AI follow a real dev lifecycle — branch, commits, PR draft, best practices and all": "我构建了一个 Claude Code 插件，使 AI 遵循真正的开发生命周期——分支、提交、PR 草案、最佳实践等等",
+  "DeepSeek details DSpark, a speculative decoding framework for its V4 models, saying it speeds up AI inference by up to 85% and was tested on Gemma and Qwen (Ben Jiang/South China Morning Post)": "DeepSeek 详细介绍了 DSpark，这是一种针对其 V4 模型的推测性解码框架，称其将 AI 推理速度提高了 85%，并在 Gemma 和 Qwen 上进行了测试（Ben Jiang/南华早报）",
+  "I'm also working on an e-ink smart clock that can handle multiple agent messages and notifications": "我还在开发一款电子墨水智能时钟，可以处理多个代理消息和通知",
+  "How prompt caching works in Claude Code (and how to stop wasting tokens)": "克劳德代码中的提示缓存如何工作（以及如何停止浪费令牌）",
+  "I built an MCP server that gives an AI agent its own crypto wallet — entirely with Claude Code": "我构建了一个 MCP 服务器，为 AI 代理提供自己的加密钱包——完全使用 Claude Code",
+  "HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88": "HackerRank 开源了其 ATS。我的简历得分为 90/100。哦等等 74。不 – 88",
+  "Claude Code versus Claude Cowork": "克劳德代码与克劳德协作",
+  "Claude usage, I am seeing usage when I am not doing anything and I can't work out what is using my sub": "克劳德用法，当我没有做任何事情并且我无法弄清楚什么在使用我的子时，我看到了用法",
+  "Learning how to use AI as an old fart": "像个老屁一样学习如何使用AI",
+  "Working around dragons with the Lemote Yeeloong laptop and OpenBSD": "使用 Lemote Yeeloong 笔记本电脑和 OpenBSD 围绕龙进行工作"
 }
