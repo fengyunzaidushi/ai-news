@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-05T21:53:51.295119Z",
+  "generated_at": "2026-07-05T22:54:48.275464Z",
   "sites": [
     {
       "site_id": "official_ai",
       "site_name": "Official AI Updates",
       "ok": true,
       "item_count": 166,
-      "duration_ms": 3104,
+      "duration_ms": 10227,
       "error": null
     },
     {
       "site_id": "aibreakfast",
       "site_name": "AI Breakfast",
       "ok": true,
-      "item_count": 9,
-      "duration_ms": 219,
+      "item_count": 7,
+      "duration_ms": 203,
       "error": null
     },
     {
@@ -22,7 +22,7 @@
       "site_name": "Follow Builders",
       "ok": true,
       "item_count": 30,
-      "duration_ms": 69,
+      "duration_ms": 186,
       "error": null
     },
     {
@@ -30,7 +30,7 @@
       "site_name": "TechURLs",
       "ok": true,
       "item_count": 405,
-      "duration_ms": 481,
+      "duration_ms": 417,
       "error": null
     },
     {
@@ -38,15 +38,15 @@
       "site_name": "Buzzing",
       "ok": true,
       "item_count": 744,
-      "duration_ms": 304,
+      "duration_ms": 320,
       "error": null
     },
     {
       "site_id": "iris",
       "site_name": "Info Flow",
       "ok": true,
-      "item_count": 348,
-      "duration_ms": 14247,
+      "item_count": 349,
+      "duration_ms": 13710,
       "error": null
     },
     {
@@ -54,23 +54,23 @@
       "site_name": "BestBlogs",
       "ok": true,
       "item_count": 1,
-      "duration_ms": 1039,
+      "duration_ms": 964,
       "error": null
     },
     {
       "site_id": "tophub",
       "site_name": "TopHub",
       "ok": true,
-      "item_count": 2848,
-      "duration_ms": 1735,
+      "item_count": 2840,
+      "duration_ms": 1405,
       "error": null
     },
     {
       "site_id": "zeli",
       "site_name": "Zeli",
       "ok": true,
-      "item_count": 78,
-      "duration_ms": 418,
+      "item_count": 80,
+      "duration_ms": 465,
       "error": null
     },
     {
@@ -78,7 +78,7 @@
       "site_name": "AI HubToday",
       "ok": true,
       "item_count": 1,
-      "duration_ms": 332,
+      "duration_ms": 342,
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "site_name": "AIbase",
       "ok": true,
       "item_count": 20,
-      "duration_ms": 1567,
+      "duration_ms": 950,
       "error": null
     },
     {
@@ -94,7 +94,7 @@
       "site_name": "AI HOT",
       "ok": true,
       "item_count": 50,
-      "duration_ms": 1519,
+      "duration_ms": 1820,
       "error": null
     },
     {
@@ -102,21 +102,21 @@
       "site_name": "NewsNow",
       "ok": true,
       "item_count": 132,
-      "duration_ms": 506,
+      "duration_ms": 433,
       "error": null
     },
     {
       "site_id": "opmlrss",
       "site_name": "OPML RSS",
       "ok": true,
-      "partial_failures": 1,
-      "item_count": 887,
-      "duration_ms": 3738,
-      "error": "1 feeds failed",
+      "partial_failures": 2,
+      "item_count": 894,
+      "duration_ms": 3944,
+      "error": "2 feeds failed",
       "feed_count": 10,
       "effective_feed_count": 7,
-      "ok_feed_count": 9,
-      "failed_feed_count": 1,
+      "ok_feed_count": 8,
+      "failed_feed_count": 2,
       "skipped_feed_count": 3,
       "replaced_feed_count": 1
     }
@@ -125,16 +125,17 @@
   "failed_sites": [],
   "zero_item_sites": [],
   "fetched_raw_items": 5719,
-  "items_before_topic_filter": 5101,
-  "items_in_24h": 459,
+  "items_before_topic_filter": 5183,
+  "items_in_24h": 473,
   "rss_opml": {
     "enabled": true,
     "path": "configured",
     "feed_total": 10,
     "effective_feed_total": 7,
-    "ok_feeds": 6,
+    "ok_feeds": 5,
     "failed_feeds": [
-      "https://www.reddit.com/r/ClaudeAI/.rss"
+      "https://www.reddit.com/r/ClaudeAI/.rss",
+      "http://www.ruanyifeng.com/blog/atom.xml"
     ],
     "zero_item_feeds": [
       "https://blog.langchain.com/rss/"
@@ -168,8 +169,8 @@
         "effective_feed_url": "https://www.reddit.com/r/ClaudeAI/.rss",
         "ok": false,
         "item_count": 0,
-        "duration_ms": 55,
-        "error": "403 Client Error: Blocked for url: https://www.reddit.com/r/ClaudeAI/.rss",
+        "duration_ms": 77,
+        "error": "429 Client Error: Too Many Requests for url: https://www.reddit.com/r/ClaudeAI/.rss",
         "skipped": false,
         "skip_reason": null,
         "replaced": false,
@@ -184,7 +185,7 @@
         "effective_feed_url": "https://huggingface.co/blog/feed.xml",
         "ok": true,
         "item_count": 814,
-        "duration_ms": 348,
+        "duration_ms": 274,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -200,7 +201,7 @@
         "effective_feed_url": "https://blog.langchain.com/rss/",
         "ok": true,
         "item_count": 0,
-        "duration_ms": 503,
+        "duration_ms": 770,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -215,8 +216,8 @@
         "feed_url": "https://www.v2ex.com/feed/tab/tech.xml",
         "effective_feed_url": "https://www.v2ex.com/feed/tab/tech.xml",
         "ok": true,
-        "item_count": 40,
-        "duration_ms": 386,
+        "item_count": 50,
+        "duration_ms": 515,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -274,7 +275,7 @@
         "effective_feed_url": "https://www.zengzhang.ai/feed",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 885,
+        "duration_ms": 672,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -290,7 +291,7 @@
         "effective_feed_url": "https://sspai.com/feed",
         "ok": true,
         "item_count": 10,
-        "duration_ms": 1322,
+        "duration_ms": 1239,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -304,10 +305,10 @@
         "feed_title": "阮一峰的网络日志",
         "feed_url": "http://www.ruanyifeng.com/blog/atom.xml",
         "effective_feed_url": "http://www.ruanyifeng.com/blog/atom.xml",
-        "ok": true,
-        "item_count": 3,
-        "duration_ms": 239,
-        "error": null,
+        "ok": false,
+        "item_count": 0,
+        "duration_ms": 397,
+        "error": "502 Server Error: Bad Gateway for url: http://www.ruanyifeng.com/blog/atom.xml",
         "skipped": false,
         "skip_reason": null,
         "replaced": false,
