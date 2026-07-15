@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-15T04:43:51.037464Z",
+  "generated_at": "2026-07-15T07:08:09.493456Z",
   "sites": [
     {
       "site_id": "official_ai",
       "site_name": "Official AI Updates",
       "ok": true,
       "item_count": 187,
-      "duration_ms": 2710,
+      "duration_ms": 4296,
       "error": null
     },
     {
@@ -14,7 +14,7 @@
       "site_name": "AI Breakfast",
       "ok": true,
       "item_count": 6,
-      "duration_ms": 386,
+      "duration_ms": 175,
       "error": null
     },
     {
@@ -30,7 +30,7 @@
       "site_name": "TechURLs",
       "ok": true,
       "item_count": 405,
-      "duration_ms": 448,
+      "duration_ms": 501,
       "error": null
     },
     {
@@ -38,15 +38,15 @@
       "site_name": "Buzzing",
       "ok": true,
       "item_count": 744,
-      "duration_ms": 320,
+      "duration_ms": 323,
       "error": null
     },
     {
       "site_id": "iris",
       "site_name": "Info Flow",
       "ok": true,
-      "item_count": 403,
-      "duration_ms": 15646,
+      "item_count": 423,
+      "duration_ms": 15783,
       "error": null
     },
     {
@@ -54,39 +54,39 @@
       "site_name": "BestBlogs",
       "ok": true,
       "item_count": 1,
-      "duration_ms": 817,
+      "duration_ms": 608,
       "error": null
     },
     {
       "site_id": "tophub",
       "site_name": "TopHub",
       "ok": true,
-      "item_count": 2987,
-      "duration_ms": 1803,
+      "item_count": 3049,
+      "duration_ms": 1989,
       "error": null
     },
     {
       "site_id": "zeli",
       "site_name": "Zeli",
       "ok": true,
-      "item_count": 72,
-      "duration_ms": 466,
+      "item_count": 74,
+      "duration_ms": 382,
       "error": null
     },
     {
       "site_id": "aihubtoday",
       "site_name": "AI HubToday",
-      "ok": true,
-      "item_count": 1,
-      "duration_ms": 384,
-      "error": null
+      "ok": false,
+      "item_count": 0,
+      "duration_ms": 125339,
+      "error": "HTTPSConnectionPool(host='ai.hubtoday.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='ai.hubtoday.app', port=443) at 0x7fabb29aaa50>, 'Connection to ai.hubtoday.app timed out. (connect timeout=30)'))"
     },
     {
       "site_id": "aibase",
       "site_name": "AIbase",
       "ok": true,
       "item_count": 20,
-      "duration_ms": 949,
+      "duration_ms": 1582,
       "error": null
     },
     {
@@ -94,7 +94,7 @@
       "site_name": "AI HOT",
       "ok": true,
       "item_count": 50,
-      "duration_ms": 484,
+      "duration_ms": 718,
       "error": null
     },
     {
@@ -102,7 +102,7 @@
       "site_name": "NewsNow",
       "ok": true,
       "item_count": 125,
-      "duration_ms": 1487,
+      "duration_ms": 987,
       "error": null
     },
     {
@@ -111,7 +111,7 @@
       "ok": true,
       "partial_failures": 0,
       "item_count": 931,
-      "duration_ms": 4853,
+      "duration_ms": 4936,
       "error": null,
       "feed_count": 10,
       "effective_feed_count": 7,
@@ -121,12 +121,14 @@
       "replaced_feed_count": 1
     }
   ],
-  "successful_sites": 14,
-  "failed_sites": [],
+  "successful_sites": 13,
+  "failed_sites": [
+    "aihubtoday"
+  ],
   "zero_item_sites": [],
-  "fetched_raw_items": 5972,
-  "items_before_topic_filter": 7906,
-  "items_in_24h": 942,
+  "fetched_raw_items": 6055,
+  "items_before_topic_filter": 7456,
+  "items_in_24h": 922,
   "rss_opml": {
     "enabled": true,
     "path": "configured",
@@ -166,7 +168,7 @@
         "effective_feed_url": "https://www.reddit.com/r/ClaudeAI/.rss",
         "ok": true,
         "item_count": 25,
-        "duration_ms": 722,
+        "duration_ms": 968,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -182,7 +184,7 @@
         "effective_feed_url": "https://huggingface.co/blog/feed.xml",
         "ok": true,
         "item_count": 823,
-        "duration_ms": 409,
+        "duration_ms": 354,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -198,7 +200,7 @@
         "effective_feed_url": "https://blog.langchain.com/rss/",
         "ok": true,
         "item_count": 0,
-        "duration_ms": 948,
+        "duration_ms": 519,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -214,7 +216,7 @@
         "effective_feed_url": "https://www.v2ex.com/feed/tab/tech.xml",
         "ok": true,
         "item_count": 50,
-        "duration_ms": 342,
+        "duration_ms": 406,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -272,7 +274,7 @@
         "effective_feed_url": "https://www.zengzhang.ai/feed",
         "ok": true,
         "item_count": 20,
-        "duration_ms": 901,
+        "duration_ms": 992,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -288,7 +290,7 @@
         "effective_feed_url": "https://sspai.com/feed",
         "ok": true,
         "item_count": 10,
-        "duration_ms": 1329,
+        "duration_ms": 1426,
         "error": null,
         "skipped": false,
         "skip_reason": null,
@@ -304,7 +306,7 @@
         "effective_feed_url": "http://www.ruanyifeng.com/blog/atom.xml",
         "ok": true,
         "item_count": 3,
-        "duration_ms": 202,
+        "duration_ms": 271,
         "error": null,
         "skipped": false,
         "skip_reason": null,
